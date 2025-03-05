@@ -1,0 +1,177 @@
+<html>
+ <head>
+  <title>
+   My Website Dio Firjatullah
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   .flag {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+        .flag-indonesia {
+            background: linear-gradient(to bottom, #ff0000 50%, #ffffff 50%);
+        }
+        .flag-other {
+            background: linear-gradient(to bottom, #ffffff 50%, #ff0000 50%);
+        }
+  </style>
+  <script>
+   function toggleFlag() {
+            const flag = document.getElementById('flag');
+            if (flag.classList.contains('flag-indonesia')) {
+                flag.classList.remove('flag-indonesia');
+                flag.classList.add('flag-other');
+            } else {
+                flag.classList.remove('flag-other');
+                flag.classList.add('flag-indonesia');
+            }
+        }
+  </script>
+  <link rel="shortcut icon" href="img.jpg" type="image/x-icon">
+  <link rel="icon" href="img.jpg" type="image/x-icon">
+ </head>
+ <body class="bg-white text-gray-800">
+  <header class="flex justify-between items-center p-4 border-b bg-blue-900 text-white">
+   <div class="flex items-center space-x-2">
+    <img alt="Logo" class="w-10 h-10" height="40" src="Fjproject.png" width="40"/>
+    <h1 class="text-lg font-bold">
+     My Website Dio Firjatullah
+    </h1>
+   </div>
+   <nav class="flex items-center space-x-4">
+    <ul class="flex space-x-4 text-sm font-bold">
+     <li class="flex items-center space-x-1">
+      <img alt="Home icon" class="w-4 h-4" height="16" src="home1-removebg-preview.png" width="16"/>
+      <a class="font-bold hover:underline" href="Index.html">
+       Home
+      </a>
+     </li>
+     <li class="flex items-center space-x-1">
+      <img alt="Download icon" class="w-4 h-4" height="16" src="download-removebg-preview.png" width="16"/>
+      <a class="font-bold hover:underline" href="Download CV.html">
+       Download CV
+      </a>
+     </li>
+     <li class="flex items-center space-x-1">
+      <img alt="Contact icon" class="w-4 h-4" height="16" src="contact1-removebg-preview.png" width="16"/>
+      <a class="font-bold hover:underline" href="contact.html">
+       Contact
+      </a>
+     </li>
+     <li class="flex items-center space-x-1">
+      <img alt="About icon" class="w-4 h-4" height="16" src="about-removebg-preview.png" width="16"/>
+      <a class="hover:underline" href="About.html">
+       About me
+      </a>
+     </li>
+    </ul>
+    <div class="flag flag-indonesia" id="flag" onclick="toggleFlag()">
+    </div>
+   </nav>
+  </header>
+  <main class="flex flex-col items-center bg-black w-full">
+   <div class="w-full flex flex-col items-center py-8 relative">
+    <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: black;">
+     <img alt="Nature background image" class="w-full h-full object-cover opacity-100" height="1080" src="gambar.jpg" width="1920"/>
+    </div>
+    <img alt="Profile picture of Dio Firjatullah" class="rounded-full w-24 h-24 z-10" height="100" src="img.jpg" width="100"/>
+    <h2 class="text-2xl font-bold mt-4 text-white z-10">
+     Dio Firjatullah
+    </h2>
+    <p class="text-white z-10">
+     (XI-TJKT)
+    </p>
+  </main>
+   </div>
+   <main class="flex flex-col items-center bg-white w-full">
+   <hr class="w-full border-t"/>
+   <section class="text-center w-full py-8">
+    <h3 class="text-xl font-bold">
+     Overview
+    </h3>
+    <p class="mt-2">
+     Hi, saya adalah web developer. Saat ini sedang belajar HTML Di Lab TJKT
+    </p>
+   </section>
+   <section class="flex justify-around w-full mt-8">
+    <div class="border p-4 rounded-lg shadow-lg">
+     <table class="table-auto w-full mt-2">
+      <thead class="bg-blue-900 text-white">
+       <tr>
+        <th class="px-4 py-2">
+         Skill
+        </th>
+       </tr>
+      </thead>
+      <tbody class="bg-white">
+       <tr>
+        <td class="border px-4 py-2">
+         Fotografer
+        </td>
+       </tr>
+       <tr>
+        <td class="border px-4 py-2">
+         Videografer
+        </td>
+       </tr>
+       <tr>
+        <td class="border px-4 py-2">
+         HTML (Beginner)
+        </td>
+       </tr>
+       <tr>
+        <td class="border px-4 py-2">
+         CSS (Beginner)
+        </td>
+       </tr>
+       <tr>
+        <td class="border px-4 py-2">
+         Computer network maintenance
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="border p-4 rounded-lg shadow-lg">
+     <table class="table-auto w-full mt-2">
+      <thead class="bg-blue-900 text-white">
+       <tr>
+        <th class="px-4 py-2">
+         Prestasi
+        </th>
+       </tr>
+      </thead>
+      <tbody class="bg-white">
+       <tr>
+        <td class="border px-4 py-2">
+         Win the poster competition
+        </td>
+       </tr>
+       <tr>
+        <td class="border px-4 py-2">
+         Win the ball game
+        </td>
+       </tr>
+       <tr>
+        <td class="border px-4 py-2">
+         Win the FreeFire competition
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </section>
+  </main>
+  <footer class="text-center mt-8 mb-4">
+   <p class="text-sm text-gray-600">
+    Copyright 2025 @Dio Firjatullah XI-TJKT.
+   </p>
+  </footer>
+ </body>
+</html>
