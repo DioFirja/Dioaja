@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>About Me - Dio Firjatullah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        .flag {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+        .flag-indonesia {
+            background: linear-gradient(to bottom, #ff0000 50%, #ffffff 50%);
+        }
+        .flag-other {
+            background: linear-gradient(to bottom, #ffffff 50%, #ff0000 50%);
+        }
+    </style>
+    <script>
+        function toggleFlag() {
+            const flag = document.getElementById('flag');
+            if (flag.classList.contains('flag-indonesia')) {
+                flag.classList.remove('flag-indonesia');
+                flag.classList.add('flag-other');
+            } else {
+                flag.classList.remove('flag-other');
+                flag.classList.add('flag-indonesia');
+            }
+        }
+    </script>
+    <link rel="shortcut icon" href="img.jpg" type="image/x-icon">
+    <link rel="icon" href="img.jpg" type="image/x-icon">
+</head>
+<body class="bg-white text-gray-800">
+    <header class="flex justify-between items-center p-4 border-b bg-blue-900 text-white">
+        <div class="flex items-center space-x-2">
+            <img alt="Logo" class="w-10 h-10" height="40" src="Fjproject.png" width="40"/>
+            <h1 class="text-lg font-bold">My Website Dio Firjatullah</h1>
+        </div>
+        <nav class="flex items-center space-x-4">
+            <ul class="flex space-x-4 text-sm font-bold">
+                <li class="flex items-center space-x-1">
+                    <img alt="Home icon" class="w-4 h-4" height="16" src="home1-removebg-preview.png" width="16"/>
+                    <a class="font-bold hover:underline" href="Index.html">Home</a>
+                </li>
+                <li class="flex items-center space-x-1">
+                    <img alt="Download icon" class="w-4 h-4" height="16" src="download-removebg-preview.png" width="16"/>
+                    <a class="font-bold hover:underline" href="Download CV.html">Download CV</a>
+                </li>
+                <li class="flex items-center space-x-1">
+                    <img alt="Contact icon" class="w-4 h-4" height="16" src="contact1-removebg-preview.png" width="16"/>
+                    <a class="font-bold hover:underline" href="contact.html">Contact</a>
+                </li>
+                <li class="flex items-center space-x-1">
+                    <img alt="About icon" class="w-4 h-4" height="16" src="about-removebg-preview.png" width="16"/>
+                    <a class="hover:underline" href="About.html">About me</a>
+                </li>
+            </ul>
+            <div id="flag" class="flag flag-indonesia" onclick="toggleFlag()"></div>
+        </nav>
+    </header>
+    <main class="flex flex-col items-center bg-black w-full py-16 relative">
+        <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: black;">
+            <img alt="Nature background image" class="w-full h-full object-cover opacity-100" src="gambar.jpg">
+        </div>
+        <h2 class="text-3xl text-white font-bold mb-8 z-10">About Me</h2>
+        <div class="bg-white p-8 rounded-lg shadow-lg z-10 w-full max-w-2xl">
+            <p class="text-lg mb-4">Hi, I'm Dio Firjatullah, a web developer currently learning HTML. I have a passion for creating beautiful and functional websites.</p>
+            <div class="aspect-w-16 aspect-h-9">
+                <video class="w-full h-full rounded-lg" controls>
+                    <source src="VID-20250225-WA0042.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center mt-8 mb-4">
+        <p class="text-sm text-gray-600">Copyright 2025 @Dio Firjatullah XI-TJKT.</p>
+    </footer>
+</body>
+</html>
